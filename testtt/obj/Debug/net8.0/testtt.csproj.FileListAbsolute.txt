@@ -173,3 +173,6 @@ C:\Users\W-11\source\repos\testtt\testtt\bin\Debug\net8.0\ru\Microsoft.CodeAnaly
 C:\Users\W-11\source\repos\testtt\testtt\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\W-11\source\repos\testtt\testtt\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\W-11\source\repos\testtt\testtt\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\W-11\source\repos\testtt\testtt\obj\Debug\net8.0\testtt.sourcelink.json
+C:\Users\W-11\source\repos\testtt\testtt\bin\Debug\net8.0\DTO.dll
+C:\Users\W-11\source\repos\testtt\testtt\bin\Debug\net8.0\DTO.pdb

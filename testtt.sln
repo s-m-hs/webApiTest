@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testtt", "testtt\testtt.csproj", "{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{53B1610D-D265-475E-9E1C-36037AC5632A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{D1940169-07DB-412E-95E4-4798C3E8E0AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{53B1610D-D265-475E-9E1C-36037AC5632A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53B1610D-D265-475E-9E1C-36037AC5632A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53B1610D-D265-475E-9E1C-36037AC5632A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1940169-07DB-412E-95E4-4798C3E8E0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1940169-07DB-412E-95E4-4798C3E8E0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1940169-07DB-412E-95E4-4798C3E8E0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1940169-07DB-412E-95E4-4798C3E8E0AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

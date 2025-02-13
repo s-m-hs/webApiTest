@@ -17,7 +17,7 @@ namespace testtt.Controllers
         [HttpGet("getAllOrder")] 
         public async Task<ActionResult<List<Order>>> getAllOrder()
         {
-            return 
+            throw new NotImplementedException();
         }
 
     }

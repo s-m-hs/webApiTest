@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\W-11\\source\\repos\\testtt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}|testtt\\testtt.csproj|c:\\users\\w-11\\source\\repos\\testtt\\testtt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}|testtt\\testtt.csproj|solutionrelative:testtt\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1940169-07DB-412E-95E4-4798C3E8E0AE}|DTO\\DTO.csproj|c:\\users\\w-11\\source\\repos\\testtt\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1940169-07DB-412E-95E4-4798C3E8E0AE}|DTO\\DTO.csproj|solutionrelative:dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}|testtt\\testtt.csproj|c:\\users\\w-11\\source\\repos\\testtt\\testtt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}|testtt\\testtt.csproj|solutionrelative:testtt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}|testtt\\testtt.csproj|c:\\users\\w-11\\source\\repos\\testtt\\testtt\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA02F788-C0CD-4A8E-B449-58BC08B6FA87}|testtt\\testtt.csproj|solutionrelative:testtt\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\W-11\\source\\repos\\testtt\\testtt\\Program.cs",
+              "RelativeDocumentMoniker": "testtt\\Program.cs",
+              "ToolTip": "C:\\Users\\W-11\\source\\repos\\testtt\\testtt\\Program.cs",
+              "RelativeToolTip": "testtt\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T07:38:48.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\W-11\\source\\repos\\testtt\\DTO\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\W-11\\source\\repos\\testtt\\DTO\\ProductDTO.cs",
+              "RelativeToolTip": "DTO\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T05:28:25.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\W-11\\source\\repos\\testtt\\testtt\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "testtt\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\W-11\\source\\repos\\testtt\\testtt\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "testtt\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T04:29:25.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\W-11\\source\\repos\\testtt\\testtt\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "testtt\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\W-11\\source\\repos\\testtt\\testtt\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "testtt\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwAwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T06:03:48.833Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

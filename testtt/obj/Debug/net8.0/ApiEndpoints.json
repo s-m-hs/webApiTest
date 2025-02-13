@@ -1,5 +1,61 @@
 [
   {
+    "ContainingType": "testtt.Controllers.ProductController",
+    "Method": "addProduct",
+    "RelativePath": "addProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "DTO.ProductDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "testtt.Controllers.ProductController",
+    "Method": "getAllProduct",
+    "RelativePath": "getAllProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DTO.ProductDTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "testtt.Controllers.OrdersController",
+    "Method": "getAllOrder",
+    "RelativePath": "Orders/getAllOrder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Models.Order, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "testtt.Controllers.WeatherForecastController",
     "Method": "addUser",
     "RelativePath": "WeatherForecast/addUser",
@@ -60,11 +116,6 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "newCustomer",
         "Type": "Models.Customer",
         "IsRequired": true
@@ -84,8 +135,8 @@
   },
   {
     "ContainingType": "testtt.Controllers.WeatherForecastController",
-    "Method": "getAllUser",
-    "RelativePath": "WeatherForecast/getAllUser",
+    "Method": "getAllUsers",
+    "RelativePath": "WeatherForecast/getAllUsers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -227,7 +278,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Models.Customer, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "DTO.CustomerDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

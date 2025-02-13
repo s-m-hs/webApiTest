@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models;
+using DTO;
 using testtt.Context;
 
 namespace testtt.Controllers
@@ -18,9 +19,17 @@ namespace testtt.Controllers
         }
 
         [HttpGet("user")]
-        public async Task<ActionResult<List<Customer>>> Get(int userId)
+        public async Task<ActionResult<CustomerDTO>> Get(int userId)
         {
-            var customer = await _db.Customers.Where(x => x.ID == userId).FirstOrDefaultAsync();
+            var customer = await _db.Customers.Where(x => x.ID == userId).Select(u =>
+                new CustomerDTO()
+                {
+                    ID = u.ID,
+                    Address = u.Address,
+                    Name = u.Name,
+                    Phone = u.Phone
+                }
+                ).FirstOrDefaultAsync();
 
             return Ok(customer);
         }
@@ -64,27 +73,29 @@ namespace testtt.Controllers
         [HttpPost("addUser")]
         public async Task<ActionResult<Customer>> addUser(Customer newCustomer)
         {
-            await _db.AddAsync(newCustomer);
-            return Ok(await _db.SaveChangesAsync());
+            var result = await _db.AddAsync(newCustomer);
+            await _db.SaveChangesAsync();
+            return Ok(result.Entity);
 
 
         }
 
-        [HttpGet("getAllUser")]
-        public async Task<ActionResult<List<Customer>>> getAllUser()
+        [HttpGet("getAllUsers")]
+        public async Task<ActionResult<List<Customer>>> getAllUsers()
         {
             var users = await _db.Customers.ToArrayAsync();
             return Ok(users);
         }
 
         [HttpPut("editUser")]
-        public async Task<ActionResult<Customer>> editUser(int userId, Customer newCustomer)
+        public async Task<ActionResult<Customer>> editUser(Customer newCustomer)
         {
+            var userId = newCustomer.ID;
             var user = await _db.Customers.Where(x => x.ID == userId).FirstOrDefaultAsync();
             if (user != null)
             {
-                newCustomer.ID = userId;
                 newCustomer.Address = user.Address;
+                newCustomer.LastModified = DateTime.Now;
 
                 _db.Entry(user).CurrentValues.SetValues(newCustomer);
                 var result = await _db.SaveChangesAsync();
@@ -103,11 +114,11 @@ namespace testtt.Controllers
             var user = await _db.Customers.Where(x => x.ID == userId).FirstOrDefaultAsync();
             if (user != null)
             {
-                _db.Customers.Remove(user);
+                user.IsVisible = false;
 
                 await _db.SaveChangesAsync();
 
-                return Ok("user deleted");
+                return Ok(new { result = "200" });
 
             }
             return BadRequest();
@@ -116,15 +127,16 @@ namespace testtt.Controllers
         [HttpPost("searchUser")]
         public async Task<ActionResult<List<Customer>>> searchUser(string input)
         {
-            if (input == null) { return BadRequest(); }
+            if (input == null) return BadRequest();
 
-            var user = await _db.Customers.Where(x => x.Name.Contains(input)).ToArrayAsync();
+            input = input.Replace(" ", "");
+            var users = await _db.Customers.Where(x => x.Name.Replace(" ","").Contains(input)).ToArrayAsync();
 
-            if (user != null)
+            if (users.Any())
             {
-                return Ok(user);
+                return Ok(users);
             }
-            return BadRequest();
+            return NotFound();
         }
     }
 }
